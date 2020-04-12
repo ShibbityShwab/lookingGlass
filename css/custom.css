@@ -1,0 +1,165 @@
+body {
+    color: lightgrey;
+    background: rgb(20, 20, 20);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+video {
+  background: black;
+}
+
+@media ( orientation: landscape ) {
+  .dash .screenShare video, .dash .cameraShare video, .users .peer-dash .screen video, .users .peer-dash .camera video {
+    max-height: 15vh;
+  }
+}
+@media ( orientation: portrait ) {
+  .dash .screenShare video, .dash .cameraShare video, .users .peer-dash .screen video, .users .peer-dash .camera video {
+    max-height: 10vh;
+  }
+}
+.btn-primary {
+  background-color: #bf4eb6;
+  border-color: #bf4eb6;
+}
+.btn-primary:hover {
+  background-color: #d94acd;
+  border-color: #bf4eb6;
+}
+.btn-primary:active {
+  background-color: #d94acd;
+  border-color: #bf4eb6;
+}
+.btn-primary:focus {
+  background-color: #d94acd;
+  border-color: #bf4eb6;
+  box-shadow: 0 0 0 .2rem rgba(217, 74, 205,.5)
+}
+.btn-primary:not(:disabled):not(.disabled).active, .btn-primary:not(:disabled):not(.disabled):active, .show > .btn-primary.dropdown-toggle {
+  background-color: #d94acd;
+  border-color: #bf4eb6;
+}
+video {
+  border-radius: 5px;
+}
+.dash {
+  display: flex;
+  flex-direction: row;
+  background: rgb(20, 20, 20);
+  margin: 1em;
+  border-radius: 5px;
+  width: 92vw;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  position: fixed;
+  z-index: 100;
+  top: 5em;
+}
+.dash .name {
+  padding: 1em;
+  width: 100%;
+  font-weight: bold;
+  width: 20vw;
+  text-align: center;
+}
+.peer-dash {
+  display: flex;
+  flex-direction: row;
+  margin: 1em;
+  border-radius: 5px;
+  border: 2px solid grey;
+  width: 90vw;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.screen {
+  display: flex;
+  flex-direction: column;
+  padding: 1em 1em 1em 0;
+  width: 35vw;
+}
+.screen video{
+  border: 1px solid pink;
+  margin-left: 1em;
+}
+.camera {
+  display: flex;
+  flex-direction: column;
+  padding: 1em 0 1em 1em;
+  width: 35vw;
+}
+.camera video {
+  border: 1px solid pink;
+  margin-right: 1em;
+}
+.screenShare {
+  display: flex;
+  flex-direction: column;
+  padding: 1em;
+  width: 36vw; 
+}
+.screenShare video{
+  margin-bottom: .5em;
+  border: 2px solid grey;
+}
+.cameraShare {
+  display: flex;
+  flex-direction: column;
+  padding: 1em;
+  width: 36vw;
+}
+.cameraShare video {  
+  margin-bottom: .5em;
+  border: 2px solid grey;
+}
+.textChat{
+  width: 90vw;
+  margin: 1em;
+}
+.textLog{
+  background-color: aliceblue;
+  width: 90vw;
+  margin: 1em;
+  height: 6em;
+  border-radius: 5px;
+  padding: .5em;
+  overflow-y: auto;
+}
+.textLog p {
+  margin-bottom: 0px;
+  color: black;
+}
+.chatArea {
+  background: rgb(20, 20, 20);
+  z-index: 100;
+  position: fixed;
+  bottom: 2em;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.name {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1em;
+  width: 100%;
+  font-weight: bold;
+  width: 20vw;
+  text-align: center;
+}
+.dash-placeholder {
+  height: 21em;
+}
+.channelID {
+  position: fixed;
+  z-index: 100;
+  background: rgb(20, 20, 20);
+  top: 0px;
+  padding: .5em;
+  border-radius: 5px;
+}
+.dash .cameraList {
+  text-overflow: ellipsis;
+}
