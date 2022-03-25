@@ -1,6 +1,6 @@
 body {
-    color: lightgrey;
-    background: rgb(20, 20, 20);
+    color: rgb(248, 248, 242);
+    background: #383a59;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -22,25 +22,30 @@ video {
   }
 }
 .btn-primary {
-  background-color: #bf4eb6;
-  border-color: #bf4eb6;
+  background-color: rgb(189, 147, 249);
+  border-color: rgb(0, 0, 0);
+  color: rgb(0, 0, 0);
 }
 .btn-primary:hover {
-  background-color: #d94acd;
-  border-color: #bf4eb6;
+  background-color: rgb(189, 147, 249);
+  border-color: rgb(0, 0, 0);
+  color: rgb(0, 0, 0);
 }
 .btn-primary:active {
-  background-color: #d94acd;
-  border-color: #bf4eb6;
+  background-color: rgb(189, 147, 249);
+  border-color: rgb(0, 0, 0);
+  color: rgb(0, 0, 0);
 }
 .btn-primary:focus {
-  background-color: #d94acd;
-  border-color: #bf4eb6;
+  background-color: rgb(189, 147, 249);
+  border-color: rgb(0, 0, 0);
+  color: rgb(0, 0, 0);
   box-shadow: 0 0 0 .2rem rgba(217, 74, 205,.5)
 }
 .btn-primary:not(:disabled):not(.disabled).active, .btn-primary:not(:disabled):not(.disabled):active, .show > .btn-primary.dropdown-toggle {
-  background-color: #d94acd;
-  border-color: #bf4eb6;
+  background-color: rgb(189, 147, 249);
+  border-color: rgb(0, 0, 0);
+  color: rgb(0, 0, 0);
 }
 video {
   border-radius: 5px;
@@ -48,7 +53,7 @@ video {
 .dash {
   display: flex;
   flex-direction: row;
-  background: rgb(20, 20, 20);
+  background: #282a36;
   margin: 1em;
   border-radius: 5px;
   width: 92vw;
@@ -118,7 +123,7 @@ video {
   margin: 1em;
 }
 .textLog{
-  background-color: aliceblue;
+  background-color: rgb(37, 37, 37);
   width: 90vw;
   margin: 1em;
   height: 6em;
@@ -128,10 +133,17 @@ video {
 }
 .textLog p {
   margin-bottom: 0px;
-  color: black;
+  color: rgb(189, 147, 249);
 }
+
+.textChat input {
+  color: rgb(189, 147, 249);
+  background-color: rgb(37, 37, 37);
+  border: none;
+}
+
 .chatArea {
-  background: rgb(20, 20, 20);
+  background: #282a36;
   z-index: 100;
   position: fixed;
   bottom: 2em;
@@ -155,7 +167,7 @@ video {
 .channelID {
   position: fixed;
   z-index: 100;
-  background: rgb(20, 20, 20);
+  background: #282a36;
   top: 0px;
   padding: .5em;
   border-radius: 5px;

@@ -6,7 +6,6 @@ async function toggleFullscreen(event) {
 	event.target.requestFullscreen();
 }
 
-
 async function cameraAccessHandler(event) {
     await user.getCamera(event);
     await user.getDevices('video');
