@@ -1,0 +1,30 @@
+name: looking-glass
+services:
+  - name: web
+    github:
+      branch: main
+      deploy_on_push: true
+      repo: yourusername/looking-glass
+    build_command: npm run build
+    run_command: npm start
+    envs:
+      - key: DATABASE_URL
+        scope: RUN_AND_BUILD_TIME
+        type: SECRET
+      - key: NODE_ENV
+        value: production
+        scope: RUN_AND_BUILD_TIME
+      - key: ICE_SERVER_URL
+        scope: RUN_AND_BUILD_TIME
+        type: SECRET
+    http_port: 3000
+    instance_count: 1
+    instance_size_slug: basic-xxs
+
+databases:
+  - engine: PG
+    name: looking-glass-db
+    production: false
+    cluster_name: looking-glass-db
+    db_name: lookingglass
+    db_user: lookingglass 
